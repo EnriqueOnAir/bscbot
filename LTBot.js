@@ -174,8 +174,8 @@
         return m;
     };
 
-    var botCreator = "Matthew (Yemasthui)";
-    var botMaintainer = "Benzi (Quoona)"
+    var botCreator = "Enrique (EnriqueOnAir)";
+    var botMaintainer = "-Gabre"
     var botCreatorIDs = ["3851534", "3934992", "4105209"];
 
     var basicBot = {
@@ -183,17 +183,17 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
+        scriptLink: "https://rawgit.com/EnriqueOnAir/LT-Bot/edit/master/LTBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/EnriqueOnAir/LT-Bot/master/lang/lt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "basicBot",
-            language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            language: "lithuanian",
+            chatLink: "https://rawgit.com/EnriqueOnAir/LT-Bot/master/lang/lt.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -208,21 +208,21 @@
             cycleGuard: true,
             maximumCycletime: 10,
             voteSkip: false,
-            voteSkipLimit: 10,
+            voteSkipLimit: 5,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 6,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
-                ["theme", "This song does not fit the room theme. "],
-                ["op", "This song is on the OP list. "],
+                ["theme", "Ši daina neatitinka kambario leidžiamos žanros. "],
+                ["op", "Ši daina yra OP sąraše "],
                 ["history", "This song is in the history. "],
-                ["mix", "You played a mix, which is against the rules. "],
-                ["sound", "The song you played had bad sound quality or no sound. "],
-                ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "]
+                ["mix", "Tu buvai paleidęs mix'ą, kuris pažeidžia taisykles. "],
+                ["sound", "Daina kuria buvote paleidę turėjo bloga garso kokybę arba išvis negrojo. "],
+                ["nsfw", "Daina buvo nesaugi darbui (vaizdas arba garsas). "],
+                ["unavailable", "Daina buvo nepasiekiama kai kuriems vartotojams. "]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
@@ -1101,7 +1101,7 @@
                 'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
+                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'bled', 'duxas', 'kurva', 'kurwa', 'suka', 'debile', 'kekse', 'nx', 'naxui', 'bld', 'bl', 'krv', 'krw', 'pize', 'pzdc', 'pzda', 'modafocka'
             ]
         },
         connectAPI: function () {
