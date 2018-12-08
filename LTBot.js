@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/EnriqueOnAir/LT-Bot/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/EnriqueOnAir/LT-Bot/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -185,7 +185,7 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/EnriqueOnAir/LT-Bot/edit/master/LTBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/EnriqueOnAir/LT-Bot/master/lang/lt.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/EnriqueOnAir/LT-Bot/lang/lt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "basicBot",
             language: "lithuanian",
-            chatLink: "https://rawgit.com/EnriqueOnAir/LT-Bot/master/lang/lt.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/EnriqueOnAir/LT-Bot/lang/lt.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
